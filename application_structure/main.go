@@ -11,6 +11,7 @@
 package main
 
 // import declaration declares packages used in this file
+// https://pkg.go.dev/fmt
 import "fmt"
 
 // package scoped variables and constants
