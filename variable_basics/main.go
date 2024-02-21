@@ -25,4 +25,20 @@ func main() {
 	// short declaration operator
 	s := "Learning Golang!"
 	fmt.Println(s)
+
+	// declaring multiple values at the same time
+	car, cost := "Audi", 50000
+	fmt.Println(car, cost)
+
+	var opened = false
+	// redeclaration of opened
+	opened, file := true, "a.txt"
+	_, _ = opened, file
+
+	var (
+		salary    float64
+		firstName string
+		gender    bool
+	)
+	println(salary, firstName, gender)
 }
