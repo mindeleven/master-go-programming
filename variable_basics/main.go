@@ -40,5 +40,5 @@ func main() {
 		firstName string
 		gender    bool
 	)
-	println(salary, firstName, gender)
+	println("\n\n", salary, firstName, gender)
 }
