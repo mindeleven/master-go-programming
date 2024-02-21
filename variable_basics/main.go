@@ -23,6 +23,8 @@ func main() {
 	_ = name2
 
 	// short declaration operator
+	// only when we know the initial value
+	// otherwise we use var keyword
 	s := "Learning Golang!"
 	fmt.Println(s)
 
@@ -40,5 +42,22 @@ func main() {
 		firstName string
 		gender    bool
 	)
-	println("\n\n", salary, firstName, gender)
+	println("\n\nsalary:", salary, " first name: ", firstName, " gender: ", gender)
+
+	// declaring multiple variables that have the same type
+	var a, b, c int
+	println("a, b, c: ", a, b, c)
+
+	// multiple assignments
+	var i, j int
+	i, j = 5, 8
+	// swapping the variables
+	i, j = j, i
+	_, _ = i, j
+	println("i, j: ", i, j)
+
+	// using expressions in short declaration
+	sum := 5 + 2.3
+	println("sum: ", sum)
+
 }
